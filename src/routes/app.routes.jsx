@@ -6,6 +6,7 @@ import { Profile } from "../pages/Profile";
 import { Details } from "../pages/Details";
 
 export function AppRoutes() {
+  const user = localStorage.getItem("user");
   return (
     <Routes>
       <Route path="/" element={<Home />} />
